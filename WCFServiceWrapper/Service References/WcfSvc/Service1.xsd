@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2186/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bhnew" />
+  <xs:element name="GetProddepinfo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProddepinfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetProddepinfoResult" nillable="true" type="q1:ProddepinfoList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Uploadthegjd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="gjdmaindc" nillable="true" type="q2:Uploadthegjdmaindatacontract" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="gjdsubdc" nillable="true" type="q3:UploadthegjdsubList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadthegjdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UploadthegjdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvMaininfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mybegintimemain" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="myendtimemain" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="myclinomain" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mybelongtomain" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvMaininfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetInvMaininfoResult" nillable="true" type="q4:MyInvMainList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvSubInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mylistnosub" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mybelongtosub" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvSubInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetInvSubInfoResult" nillable="true" type="q5:MyInvSubList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientInfo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetClientInfoResult" nillable="true" type="q6:MyClientInfolist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getboxmidnum">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetboxmidnumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetboxmidnumResult" nillable="true" type="q7:Myboxmediumlist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyProdfull">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyProdfullResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetMyProdfullResult" nillable="true" type="q8:MyProdfulllist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyProdfullsingle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mybleongto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyProdfullsingleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetMyProdfullsingleResult" nillable="true" type="q9:MyProdfulllist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProdrecip">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProdrecipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetProdrecipResult" nillable="true" type="q10:MyProdrecipelist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getsimilarprodname">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetsimilarprodnameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetsimilarprodnameResult" nillable="true" type="q11:SimilarProdnamelist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getthedatetime">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getthedatetimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getthedatetimeResult" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="uploadfiveprod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="theuploadprodlist" nillable="true" type="q12:Uploadfiveproddatalist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="uploadfiveprodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="uploadfiveprodResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Uploadthegjdver2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="gjdmaindc" nillable="true" type="q13:Uploadthegjdmaindcver2" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="gjdsubdc" nillable="true" type="q14:Uploadthegjdsubver2List" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="ldc" nillable="true" type="q15:Lackofgoodlist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Uploadthegjdver2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Uploadthegjdver2Result" type="xs:int" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="ldc" nillable="true" type="q16:Lackofgoodlist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Checkkcbelong">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="checkkclist" nillable="true" type="q17:CheckkcretbelongList" />
+        <xs:element minOccurs="0" name="cli_no" nillable="true" type="xs:string" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="prodblist" nillable="true" type="q18:Prodbelonglist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckkcbelongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckkcbelongResult" type="xs:int" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="prodblist" nillable="true" type="q19:Prodbelonglist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Uploadthekc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="kcmaindc" nillable="true" type="q20:Uploadkcmaindc" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="kcsubdc" nillable="true" type="q21:UploadkcsubdcList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadthekcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UploadthekcResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Checkretbelong">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="checkretlist" nillable="true" type="q22:CheckkcretbelongList" />
+        <xs:element minOccurs="0" name="cli_no" nillable="true" type="xs:string" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="prodblist" nillable="true" type="q23:Prodbelonglist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckretbelongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckretbelongResult" type="xs:int" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="prodblist" nillable="true" type="q24:Prodbelonglist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Uploadtheret">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="retmaindc" nillable="true" type="q25:Uploadkcmaindc" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="uploadretlist" nillable="true" type="q26:Uploadret2subdclist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadtheretResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UploadtheretResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Gettheautodep">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GettheautodepResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GettheautodepResult" nillable="true" type="q27:Bzkdclist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getthebth">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetthebthResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetthebthResult" nillable="true" type="q28:Strkdclist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getoldgf">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetoldgfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetoldgfResult" nillable="true" type="q29:Strkdclist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getnewgf">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetnewgfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetnewgfResult" nillable="true" type="q30:Dblkdclist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Uploaddep">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="deplist" nillable="true" type="q31:Depdclist" />
+        <xs:element minOccurs="0" name="cli_no" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploaddepResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UploaddepResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Uploadchangeprice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="chgpricelist" nillable="true" type="q32:changepricelist" />
+        <xs:element minOccurs="0" name="cli_no" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="softwaretype" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadchangepriceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UploadchangepriceResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getoldgfsingle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="thedb" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetoldgfsingleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetoldgfsingleResult" nillable="true" type="q33:Strkdclist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getnewgfsingle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="thedb" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetnewgfsingleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetnewgfsingleResult" nillable="true" type="q34:Dblkdclist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getinvinfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="qi" nillable="true" type="q35:querypostinfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetinvinfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetinvinfoResult" nillable="true" type="q36:Invfullinfolist" />
+        <xs:element minOccurs="0" name="pageCount" type="xs:int" />
+        <xs:element minOccurs="0" name="Counts" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getthedepinfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="thebelong" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetthedepinfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetthedepinfoResult" nillable="true" type="q37:lestmodellist" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvSubInfo2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mylistnosub" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mybelongtosub" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvSubInfo2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/bhnew" minOccurs="0" name="GetInvSubInfo2Result" nillable="true" type="q38:MyInvSubList2" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

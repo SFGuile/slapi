@@ -1,0 +1,9 @@
+D:\csharp\csharptestnew\bhnew\bhcom\bhcom\bin\Release\app.config
+D:\csharp\csharptestnew\bhnew\bhcom\bhcom\bin\Release\bhcom.dll.config
+D:\csharp\csharptestnew\bhnew\bhcom\bhcom\bin\Release\bhcom.dll
+D:\csharp\csharptestnew\bhnew\bhcom\bhcom\bin\Release\bhcom.pdb
+D:\csharp\csharptestnew\bhnew\bhcom\bhcom\bin\Release\WCFServiceWrapper.dll
+D:\csharp\csharptestnew\bhnew\bhcom\bhcom\bin\Release\WCFServiceWrapper.pdb
+D:\csharp\csharptestnew\bhnew\bhcom\bhcom\obj\Release\ResolveAssemblyReference.cache
+D:\csharp\csharptestnew\bhnew\bhcom\bhcom\obj\Release\bhcom.dll
+D:\csharp\csharptestnew\bhnew\bhcom\bhcom\obj\Release\bhcom.pdb

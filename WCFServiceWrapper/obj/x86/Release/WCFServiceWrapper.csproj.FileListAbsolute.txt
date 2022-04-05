@@ -1,0 +1,6 @@
+D:\csharp\csharptestnew\bhnew\WCFServiceWrapper\bin\x86\Release\WCFServiceWrapper.dll.config
+D:\csharp\csharptestnew\bhnew\WCFServiceWrapper\bin\x86\Release\WCFServiceWrapper.dll
+D:\csharp\csharptestnew\bhnew\WCFServiceWrapper\bin\x86\Release\WCFServiceWrapper.pdb
+D:\csharp\csharptestnew\bhnew\WCFServiceWrapper\obj\x86\Release\ResolveAssemblyReference.cache
+D:\csharp\csharptestnew\bhnew\WCFServiceWrapper\obj\x86\Release\WCFServiceWrapper.dll
+D:\csharp\csharptestnew\bhnew\WCFServiceWrapper\obj\x86\Release\WCFServiceWrapper.pdb

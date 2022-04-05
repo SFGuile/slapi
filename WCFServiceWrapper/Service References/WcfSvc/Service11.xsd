@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/bhnew" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/bhnew" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ProddepinfoList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proddepinfo" nillable="true" type="tns:Proddepinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProddepinfoList" nillable="true" type="tns:ProddepinfoList" />
+  <xs:complexType name="Proddepinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mybelognto" type="xs:int" />
+      <xs:element minOccurs="0" name="Mylastadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodsize" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myretailprice" type="xs:double" />
+      <xs:element minOccurs="0" name="Myysbl" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Proddepinfo" nillable="true" type="tns:Proddepinfo" />
+  <xs:complexType name="GetProddepinfoFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProblemType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetProddepinfoFault" nillable="true" type="tns:GetProddepinfoFault" />
+  <xs:complexType name="Uploadthegjdmaindatacontract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mybelongtomain" type="xs:int" />
+      <xs:element minOccurs="0" name="Myclinomain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mylistnomain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mylocaltimemain" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Mynowstatusmain" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadthegjdmaindatacontract" nillable="true" type="tns:Uploadthegjdmaindatacontract" />
+  <xs:complexType name="UploadthegjdsubList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Uploadthegjdsub" nillable="true" type="tns:Uploadthegjdsub" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UploadthegjdsubList" nillable="true" type="tns:UploadthegjdsubList" />
+  <xs:complexType name="Uploadthegjdsub">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mylesttimesub" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Mylistnosub" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myneednumsub" type="xs:double" />
+      <xs:element minOccurs="0" name="Myprodnosub" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mystatusub" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadthegjdsub" nillable="true" type="tns:Uploadthegjdsub" />
+  <xs:complexType name="UploadthegjdFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProblemType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UploadthegjdFault" nillable="true" type="tns:UploadthegjdFault" />
+  <xs:complexType name="MyInvMainList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MyInvMainDataContract" nillable="true" type="tns:MyInvMainDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyInvMainList" nillable="true" type="tns:MyInvMainList" />
+  <xs:complexType name="MyInvMainDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Myclinamemain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myclinomain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvdatemain" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Myinvmemomain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvmonmain" type="xs:double" />
+      <xs:element minOccurs="0" name="Mylistnomain" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyInvMainDataContract" nillable="true" type="tns:MyInvMainDataContract" />
+  <xs:complexType name="GetInvMaininfoFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProblemType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetInvMaininfoFault" nillable="true" type="tns:GetInvMaininfoFault" />
+  <xs:complexType name="MyInvSubList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MyInvSubDataContract" nillable="true" type="tns:MyInvSubDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyInvSubList" nillable="true" type="tns:MyInvSubList" />
+  <xs:complexType name="MyInvSubDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Myinvsubavaildate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Myinvsubbarcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubbatchno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubboxmidnum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubboxnum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubinvnum" type="xs:double" />
+      <xs:element minOccurs="0" name="Myinvsubmonad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodlabel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodmade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodpzwh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodsize" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubretailprice" type="xs:double" />
+      <xs:element minOccurs="0" name="Myinvsubsellprice" type="xs:double" />
+      <xs:element minOccurs="0" name="Myinvsubstdprice" type="xs:double" />
+      <xs:element minOccurs="0" name="Myinvsubwareno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyInvSubDataContract" nillable="true" type="tns:MyInvSubDataContract" />
+  <xs:complexType name="GetInvSubInfoFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProblemType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetInvSubInfoFault" nillable="true" type="tns:GetInvSubInfoFault" />
+  <xs:complexType name="MyClientInfolist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MyClientInfoDataContract" nillable="true" type="tns:MyClientInfoDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyClientInfolist" nillable="true" type="tns:MyClientInfolist" />
+  <xs:complexType name="MyClientInfoDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mycliass" nillable="true" type="xs:string" />
+      <xs:element name="Myclientcliadd" nillable="true" type="xs:string" />
+      <xs:element name="Myclientclimemo" nillable="true" type="xs:string" />
+      <xs:element name="Myclientcliname" nillable="true" type="xs:string" />
+      <xs:element name="Myclientclino" nillable="true" type="xs:string" />
+      <xs:element name="Myclientclitel" nillable="true" type="xs:string" />
+      <xs:element name="Myclientsex" nillable="true" type="xs:string" />
+      <xs:element name="Myclientsumjf" type="xs:double" />
+      <xs:element minOccurs="0" name="Myclienttypeno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mycliper" type="xs:double" />
+      <xs:element minOccurs="0" name="Myjf" type="xs:int" />
+      <xs:element minOccurs="0" name="Mynl" type="xs:int" />
+      <xs:element minOccurs="0" name="Myprjf" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyClientInfoDataContract" nillable="true" type="tns:MyClientInfoDataContract" />
+  <xs:complexType name="GetClientInfoFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProblemType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetClientInfoFault" nillable="true" type="tns:GetClientInfoFault" />
+  <xs:complexType name="Myboxmediumlist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MyboxmediumDataContract" nillable="true" type="tns:MyboxmediumDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Myboxmediumlist" nillable="true" type="tns:Myboxmediumlist" />
+  <xs:complexType name="MyboxmediumDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Myboxmidnum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyboxmediumDataContract" nillable="true" type="tns:MyboxmediumDataContract" />
+  <xs:complexType name="BoxmidnumFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProblemType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BoxmidnumFault" nillable="true" type="tns:BoxmidnumFault" />
+  <xs:complexType name="MyProdfulllist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MyProdfullDatacontract" nillable="true" type="tns:MyProdfullDatacontract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyProdfulllist" nillable="true" type="tns:MyProdfulllist" />
+  <xs:complexType name="MyProdfullDatacontract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mybarcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mylastadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mymonad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodlabel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodmade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodpzwh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodsize" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myretailprice" type="xs:double" />
+      <xs:element minOccurs="0" name="Mysellstop" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Mystdprice" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyProdfullDatacontract" nillable="true" type="tns:MyProdfullDatacontract" />
+  <xs:complexType name="ProdfullFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProblemType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProdfullFault" nillable="true" type="tns:ProdfullFault" />
+  <xs:complexType name="MyProdrecipelist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MyProdrecipeDataContract" nillable="true" type="tns:MyProdrecipeDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyProdrecipelist" nillable="true" type="tns:MyProdrecipelist" />
+  <xs:complexType name="MyProdrecipeDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Myprodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myrecipe" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyProdrecipeDataContract" nillable="true" type="tns:MyProdrecipeDataContract" />
+  <xs:complexType name="ProdrecipeFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProblemType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProdrecipeFault" nillable="true" type="tns:ProdrecipeFault" />
+  <xs:complexType name="SimilarProdnamelist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SimilarProdnameDatacontract" nillable="true" type="tns:SimilarProdnameDatacontract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SimilarProdnamelist" nillable="true" type="tns:SimilarProdnamelist" />
+  <xs:complexType name="SimilarProdnameDatacontract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mybelongfir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mybelongsec" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mybuypricefir" type="xs:double" />
+      <xs:element minOccurs="0" name="Mybuypricesec" type="xs:double" />
+      <xs:element minOccurs="0" name="Mydepnumfir" type="xs:double" />
+      <xs:element minOccurs="0" name="Mydepnumsec" type="xs:double" />
+      <xs:element minOccurs="0" name="Mylastaddfir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mylastaddsec" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mymonadfir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mymonadsec" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodnamefir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodnamesec" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodnasecfir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodnasecsec" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodnofir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodnosec" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodsizefir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodsizesec" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mysellstopfir" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Mysellstopsec" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SimilarProdnameDatacontract" nillable="true" type="tns:SimilarProdnameDatacontract" />
+  <xs:complexType name="SimilarProdnameFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProblemType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SimilarProdnameFault" nillable="true" type="tns:SimilarProdnameFault" />
+  <xs:complexType name="Uploadfiveproddatalist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Uploadfiveproddatacontract" nillable="true" type="tns:Uploadfiveproddatacontract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadfiveproddatalist" nillable="true" type="tns:Uploadfiveproddatalist" />
+  <xs:complexType name="Uploadfiveproddatacontract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mybatchno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myclino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvbywho" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvdate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Myinvnum" type="xs:double" />
+      <xs:element minOccurs="0" name="Mylistno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mymdno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mysellprice" type="xs:double" />
+      <xs:element minOccurs="0" name="Mystdprice" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadfiveproddatacontract" nillable="true" type="tns:Uploadfiveproddatacontract" />
+  <xs:complexType name="uploadfiveprodFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProblemType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="uploadfiveprodFault" nillable="true" type="tns:uploadfiveprodFault" />
+  <xs:complexType name="Uploadthegjdmaindcver2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Myclinomain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myclinozymain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mylistnomain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mylocaltimemain" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Mynowstatusmain" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadthegjdmaindcver2" nillable="true" type="tns:Uploadthegjdmaindcver2" />
+  <xs:complexType name="Uploadthegjdsubver2List">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Uploadthegjdsubver2" nillable="true" type="tns:Uploadthegjdsubver2" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadthegjdsubver2List" nillable="true" type="tns:Uploadthegjdsubver2List" />
+  <xs:complexType name="Uploadthegjdsubver2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mybelong" type="xs:int" />
+      <xs:element minOccurs="0" name="Mylastaddsub" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mylesttimesub" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Mylistnosub" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myneednumsub" type="xs:double" />
+      <xs:element minOccurs="0" name="Myprodnamesub" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodnosub" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myreason" type="xs:int" />
+      <xs:element minOccurs="0" name="Mystatusub" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadthegjdsubver2" nillable="true" type="tns:Uploadthegjdsubver2" />
+  <xs:complexType name="Lackofgoodlist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LackofGoodatacontract" nillable="true" type="tns:LackofGoodatacontract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Lackofgoodlist" nillable="true" type="tns:Lackofgoodlist" />
+  <xs:complexType name="LackofGoodatacontract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mygjdno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lackreason" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LackofGoodatacontract" nillable="true" type="tns:LackofGoodatacontract" />
+  <xs:complexType name="CheckkcretbelongList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Checkkcretbelong" nillable="true" type="tns:Checkkcretbelong" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CheckkcretbelongList" nillable="true" type="tns:CheckkcretbelongList" />
+  <xs:complexType name="Checkkcretbelong">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mybatchno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mylastadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mymonad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Checkkcretbelong" nillable="true" type="tns:Checkkcretbelong" />
+  <xs:complexType name="Prodbelonglist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Prodbelongto" nillable="true" type="tns:Prodbelongto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Prodbelonglist" nillable="true" type="tns:Prodbelonglist" />
+  <xs:complexType name="Prodbelongto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mybatchno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mybelongto" type="xs:int" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Prodbelongto" nillable="true" type="tns:Prodbelongto" />
+  <xs:complexType name="Uploadkcmaindc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Myclinomain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myclinozymain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mylistnomain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mynowstatusmain" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadkcmaindc" nillable="true" type="tns:Uploadkcmaindc" />
+  <xs:complexType name="UploadkcsubdcList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Uploadkcsubdc" nillable="true" type="tns:Uploadkcsubdc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UploadkcsubdcList" nillable="true" type="tns:UploadkcsubdcList" />
+  <xs:complexType name="Uploadkcsubdc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mydepdate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Myinvnum" type="xs:double" />
+      <xs:element minOccurs="0" name="Mylestnum" type="xs:double" />
+      <xs:element minOccurs="0" name="Mylnum" type="xs:double" />
+      <xs:element minOccurs="0" name="Mylnumno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mystdprice" type="xs:double" />
+      <xs:element minOccurs="0" name="theblongto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadkcsubdc" nillable="true" type="tns:Uploadkcsubdc" />
+  <xs:complexType name="Uploadret2subdclist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Uploadret2subdc" nillable="true" type="tns:Uploadret2subdc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadret2subdclist" nillable="true" type="tns:Uploadret2subdclist" />
+  <xs:complexType name="Uploadret2subdc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mybatchno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mybuyprice" type="xs:double" />
+      <xs:element minOccurs="0" name="Mylnumno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myretnum" type="xs:double" />
+      <xs:element minOccurs="0" name="Mystdprice" type="xs:double" />
+      <xs:element minOccurs="0" name="theblongto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Uploadret2subdc" nillable="true" type="tns:Uploadret2subdc" />
+  <xs:complexType name="Bzkdclist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Bzkdc" nillable="true" type="tns:Bzkdc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Bzkdclist" nillable="true" type="tns:Bzkdclist" />
+  <xs:complexType name="Bzkdc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mybz" type="xs:int" />
+      <xs:element minOccurs="0" name="Mylastadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodnanme" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Bzkdc" nillable="true" type="tns:Bzkdc" />
+  <xs:complexType name="Strkdclist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Strkdc" nillable="true" type="tns:Strkdc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Strkdclist" nillable="true" type="tns:Strkdclist" />
+  <xs:complexType name="Strkdc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mylastadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodnanme" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mystr" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Strkdc" nillable="true" type="tns:Strkdc" />
+  <xs:complexType name="Dblkdclist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Dblkdc" nillable="true" type="tns:Dblkdc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dblkdclist" nillable="true" type="tns:Dblkdclist" />
+  <xs:complexType name="Dblkdc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mydbl" type="xs:double" />
+      <xs:element minOccurs="0" name="Mylastadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodnanme" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dblkdc" nillable="true" type="tns:Dblkdc" />
+  <xs:complexType name="Depdclist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Depdc" nillable="true" type="tns:Depdc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Depdclist" nillable="true" type="tns:Depdclist" />
+  <xs:complexType name="Depdc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Myavaildate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Mybatchno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myboxnum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mylestnum" type="xs:double" />
+      <xs:element minOccurs="0" name="Myprodadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mystdprice" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Depdc" nillable="true" type="tns:Depdc" />
+  <xs:complexType name="changepricelist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Changeprice" nillable="true" type="tns:Changeprice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="changepricelist" nillable="true" type="tns:changepricelist" />
+  <xs:complexType name="Changeprice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="batchno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="changedate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="lestnum" type="xs:double" />
+      <xs:element minOccurs="0" name="monad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="new_std_price" type="xs:double" />
+      <xs:element minOccurs="0" name="old_std_price" type="xs:double" />
+      <xs:element minOccurs="0" name="prodadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodsize" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Changeprice" nillable="true" type="tns:Changeprice" />
+  <xs:complexType name="querypostinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="begtime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="cli_no" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="endtime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="pageIndex" type="xs:int" />
+      <xs:element minOccurs="0" name="pageSize" type="xs:int" />
+      <xs:element minOccurs="0" name="thebelong" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="querypostinfo" nillable="true" type="tns:querypostinfo" />
+  <xs:complexType name="Invfullinfolist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Invfullinfo" nillable="true" type="tns:Invfullinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Invfullinfolist" nillable="true" type="tns:Invfullinfolist" />
+  <xs:complexType name="Invfullinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="availdate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="batchno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="invdate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="invnum" type="xs:double" />
+      <xs:element minOccurs="0" name="listno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="monad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodpzwh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodsize" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="retailprice" type="xs:double" />
+      <xs:element minOccurs="0" name="sellprice" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Invfullinfo" nillable="true" type="tns:Invfullinfo" />
+  <xs:complexType name="lestmodellist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="lestmodel" nillable="true" type="tns:lestmodel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="lestmodellist" nillable="true" type="tns:lestmodellist" />
+  <xs:complexType name="lestmodel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="availdate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="batchno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lestnum" type="xs:double" />
+      <xs:element minOccurs="0" name="monad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prodsize" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="lestmodel" nillable="true" type="tns:lestmodel" />
+  <xs:complexType name="MyInvSubList2">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MyInvSubDataContract2" nillable="true" type="tns:MyInvSubDataContract2" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyInvSubList2" nillable="true" type="tns:MyInvSubList2" />
+  <xs:complexType name="MyInvSubDataContract2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Myinvsubavaildate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Myinvsubbarcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubbatchno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubboxmidnum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubboxnum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubinvnum" type="xs:double" />
+      <xs:element minOccurs="0" name="Myinvsubmonad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodlabel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodmade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodpzwh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubprodsize" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myinvsubretailprice" type="xs:double" />
+      <xs:element minOccurs="0" name="Myinvsubsellprice" type="xs:double" />
+      <xs:element minOccurs="0" name="Myinvsubstdprice" type="xs:double" />
+      <xs:element minOccurs="0" name="Myinvsubwareno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Myproducedate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyInvSubDataContract2" nillable="true" type="tns:MyInvSubDataContract2" />
+</xs:schema>
